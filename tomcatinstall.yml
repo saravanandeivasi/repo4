@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.33.208
+- hosts: all
   become: yes
   roles:
   - {role: tomcatrepo, when: ansible_os_family =="debian"}
