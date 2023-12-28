@@ -1,0 +1,9 @@
+---
+- name: update
+  apt:
+   update_cache: yes
+
+- name: Install java 11
+  apt:
+   name: default-jre
+   state: present   

@@ -1,0 +1,6 @@
+---
+- name: Provide Owner permission.yml
+  command: sudo chown -R tomcat:tomcat /opt/tomcat/
+
+- name: Provide execute permission
+  command: sudo chmod -R u+x /opt/tomcat/bin

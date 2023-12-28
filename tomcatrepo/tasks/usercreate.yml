@@ -1,0 +1,10 @@
+---
+- name: Create a tomcat user on node
+  user:
+   shell: /bin/false
+   name: tomcat
+   home: /opt/tomcat
+   state: present
+
+
+   

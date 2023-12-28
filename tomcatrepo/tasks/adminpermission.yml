@@ -1,0 +1,15 @@
+---
+- name: Crete a tomcat user file
+  template:
+   src: template/tomcatusers.j2
+   dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: Crete a tomcat context file
+  template:
+   src: template/tomcatcontext.j2
+   dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: Crete a tomcat hostnamager  file
+  template:
+   src: template/tomcathostnamager.j2
+   dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml      
